@@ -4,18 +4,20 @@
 
 
 * {
-  margin: 0;
-  padding: 0;
-  text-decoration: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
 }
 
 *, *:before, *:after {
+    
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
 html {
+  
   margin: 0;
   -webkit-text-size-adjust: none;
 }
@@ -160,8 +162,9 @@ label, label + * {
 }
 
 .master-column-wrapper {
-  position: relative;
-  z-index: 0;
+    background-color: #fff5d7;
+    position: relative;
+    z-index: 0;
 }
 
 .master-column-wrapper:after {
@@ -171,10 +174,12 @@ label, label + * {
 }
 
 .center-1 {
+/*  background-color: red;*/
   margin: 0 0 100px;
 }
 
 .center-2, .side-2 {
+/*  background-color: green;*/
   margin: 0 0 50px;
 }
 
@@ -868,7 +873,8 @@ label, label + * {
 
 
 .admin-header-links {
-    background-color: #4169E1;
+    /*    background-color: #4169E1;*/
+    background-color: #0074D9;
     text-align: center;
     color: #eee;
 }
@@ -896,11 +902,12 @@ label, label + * {
 }
 
 .header {
-  position: relative;
-  z-index: 10;
-  width: 95%;
-  margin: auto;
-  text-align: center;
+    background-color: #acb7ae;
+    position: relative;
+    z-index: 10;
+    width: 95%;
+    margin: auto;
+    text-align: center;
 }
 
 .header-upper {
@@ -1116,8 +1123,9 @@ label, label + * {
 
 
 .footer {
-  background-color: #eee;
-  text-align: center;
+    background-color: #91A2C2; /* Light Gray */
+    text-align: center;
+    color: #000;
 }
 
 .footer-upper {
@@ -1239,10 +1247,10 @@ label, label + * {
   float: left;
   height: 36px;
   border: none;
-  background-color: #4ab2f1;
+  background-color: greenyellow;
   padding: 0 15px;
   text-align: center;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
 }
 
@@ -1313,10 +1321,11 @@ label, label + * {
 
 
 .block {
-  max-width: 600px; /*width limit in mobile*/
-  min-height: 50px;
-  margin: auto;
-  text-align: left;
+    background-color: #c2edda; /*gray blue green*/
+    max-width: 600px; /*width limit in mobile*/
+    min-height: 50px;
+    margin: auto;
+    text-align: left;
 }
 
 .block .title {
@@ -1529,9 +1538,10 @@ label, label + * {
 
 
 .breadcrumb {
-  margin: 0 0 50px;
-  background-color: #f6f6f6;
-  padding: 5px 10px;
+    margin: 0 0 50px;
+    /*  background-color: #f6f6f6;*/
+    background-color: lightskyblue;
+    padding: 5px 10px;
 }
 
 .breadcrumb ul {
@@ -2070,6 +2080,7 @@ label, label + * {
 }
 
 .gallery {
+
   margin: 0 auto 50px;
 }
 
