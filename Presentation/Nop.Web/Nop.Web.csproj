@@ -68,6 +68,9 @@
     <Content Update="Themes\MyTheme\Content\images\logo.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Update="Views\Shared\_Root.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 
   <!-- This target execute after "Build" target.
