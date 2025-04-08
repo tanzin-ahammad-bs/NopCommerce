@@ -1039,6 +1039,7 @@ label, label + * {
         border: 2px solid #4ab2f1; /* Branded blue border */
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 50px;
     }
 
         /* Hover effect */
@@ -1134,7 +1135,7 @@ label, label + * {
     border: none;
     padding: 0 25px;
     font-size: 16px;
-    border-radius: 10px;
+    border-radius: 40px;
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
