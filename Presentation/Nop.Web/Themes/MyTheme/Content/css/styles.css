@@ -1030,10 +1030,25 @@ label, label + * {
   line-height: 0; /*firefox line-height bug fix*/
 }
 
-.header-logo a img {
-  max-width: 100%;
-  opacity: 1;
-}
+    .header-logo a img {
+        max-width: 180px;
+        height: auto;
+        display: block;
+        padding: 10px;
+        background-color: #f0f8ff; /* Light blue background (very soft) */
+        border: 2px solid #4ab2f1; /* Branded blue border */
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+        /* Hover effect */
+        .header-logo a img:hover {
+            transform: scale(1.04);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
+
+
 
 /* Search box */
 
@@ -1114,7 +1129,7 @@ label, label + * {
     height: 48px;
     min-width: 100px;
 /*    background-color: #4ab2f1;*/
-    background-color: red;
+    background-color: lightseagreen;
     color: white;
     border: none;
     padding: 0 25px;
@@ -1123,7 +1138,7 @@ label, label + * {
     text-transform: uppercase;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.1s ease;
-    box-shadow: 0 1px 2spx rgba(0,0,0,0.1);
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
 }
 
 /*.search-box .search-box-button:hover,
@@ -1445,8 +1460,8 @@ label, label + * {
   display: inline-block;
   position: relative;
   padding: 5px 0;
-  font-size: 16px;
-  color: #444;
+  font-size: 20px;
+  color: black;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
@@ -1462,7 +1477,7 @@ label, label + * {
 }
 
 .block .list .active > a {
-  color: #4ab2f1;
+  color: navajowhite;
 }
 
 .block .list a:hover,
@@ -9098,6 +9113,88 @@ a.skip:hover {
   width: 100%;
   font-size: 16px;
 }
+
+
+
+
+
+
+.master-wrapper-page,
+.master-wrapper-content,
+.center-1,
+.page,
+.header,
+.header-menu {
+    width: 100% !important;
+    max-width: 1600px;
+    margin: 20px auto;
+    padding: 25px;
+    box-sizing: border-box;
+    /*  Modern look */
+    background: #ffffff; /* Clean content background */
+    border-left: 2px solid #dce3eb;
+    border-right: 2px solid #dce3eb;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+    border-radius: 12px;
+}
+
+/*  Page background to contrast content */
+body {
+    background: linear-gradient(to bottom, #f2f6fc, #e6ecf3); /* soft gradient */
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  Optional header enhancement */
+.header {
+    background-color: #f8fbff;
+    border-bottom: 1px solid #dce3eb;
+}
+
+/* Optional top bar color accent */
+.header-menu {
+    background-color: #4ab2f1;
+    color: white;
+}
+
+    .header-menu a {
+        color: white !important;
+        text-transform: uppercase;
+        font-weight: 600;
+        padding: 10px 15px;
+        display: inline-block;
+    }
+
+        .header-menu a:hover {
+            background-color: #248ece;
+            color: #fff !important;
+        }
+
+
+
+
+
+/*Animation part fade In for .5 sec*/
+
+.master-wrapper-page {
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
 
 
 
