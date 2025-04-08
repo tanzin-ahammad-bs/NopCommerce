@@ -8333,6 +8333,11 @@ color: white;
   }
 
     .header-menu .sublist {
+        
+        border-radius: 12px; /* Rounded corners */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
         display: none;
         position: absolute;
         width: 200px;
