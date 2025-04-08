@@ -1065,11 +1065,11 @@ label, label + * {
     width: 100%; /* full-width or set a max-width */
     max-width: 600px;
     height: auto;
-    display: flex;
+/*    display: flex;*/
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin: 0 350px 0 0; /* center horizontally */
+    margin: 0 50px 0 0; /* center horizontally */
     padding: 10px;
 }
 
@@ -1993,30 +1993,37 @@ color: white;
   height: 40px;
   border: none;
   vertical-align: middle;
+  border-radius: 6px;
+  transition: all 0.3s ease;
 }
 
 .item-box .product-box-add-to-cart-button {
-  width: 60%;
-  background-color: red;
-  text-align: center;
-  font-size: 15px;
-  color: white;
-  text-transform: uppercase;
+    width: 60%;
+    background-color: #28a745;
+    text-align: center;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
 }
 
-.item-box .product-box-add-to-cart-button:hover,
-.item-box .product-box-add-to-cart-button:focus {
-  background-color: orange;
-}
+    .item-box .product-box-add-to-cart-button:hover,
+    .item-box .product-box-add-to-cart-button:focus {
+        background-color: #218838; /*darker green for hover*/
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+    }
 
 .item-box .add-to-compare-list-button,
 .item-box .add-to-wishlist-button {
-  width: 20%;
-  border-left: 1px solid #fff !important;
-  background-color: #eaeaea;
-  background-position: center;
-  background-repeat: no-repeat;
-  font-size: 0;
+    width: 20%;
+    border-left: 1px solid #fff !important;
+    background-color: #f0f0f0; /* Soft gray background */
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 0;
+    background-size: 35px 20px; /* Resize icon to fit the button */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .item-box .add-to-compare-list-button {
@@ -2027,12 +2034,13 @@ color: white;
   background-image: url('../images/wishlist-button.png');
 }
 
-.item-box .add-to-compare-list-button:hover,
-.item-box .add-to-compare-list-button:focus,
-.item-box .add-to-wishlist-button:hover,
-.item-box .add-to-wishlist-button:focus {
-  background-color: #ddd;
-}
+    .item-box .add-to-compare-list-button:hover,
+    .item-box .add-to-compare-list-button:focus,
+    .item-box .add-to-wishlist-button:hover,
+    .item-box .add-to-wishlist-button:focus {
+        background-color: #e0e0e0; /* Slightly darker gray on hover */
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darker shadow on hover */
+    }
 
 .home-page-category-grid,
 .sub-category-grid,
@@ -9132,11 +9140,19 @@ a.skip:hover {
     box-sizing: border-box;
     /*  Modern look */
     background: #ffffff; /* Clean content background */
-    border-left: 2px solid #dce3eb;
-    border-right: 2px solid #dce3eb;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 4px 8px rgba(0, 0, 0, 0.06), 0 12px 24px rgba(0, 0, 0, 0.08); /* layered shadows for depth */
+
+    border: 1px solid #e2e8f0; /* full border for clean structure */
+
     border-radius: 12px;
 }
+
+.center-1,
+.page {
+    margin-bottom: 30px;
+}
+
 
 /*  Page background to contrast content */
 body {
