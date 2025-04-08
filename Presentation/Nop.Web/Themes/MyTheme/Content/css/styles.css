@@ -2001,7 +2001,7 @@ color: white;
     width: 60%;
     background-color: #28a745;
     text-align: center;
-    font-size: 16px;
+    font-size: 15px;
     color: white;
     text-transform: uppercase;
     padding: 10px;
@@ -2022,7 +2022,7 @@ color: white;
     background-position: center;
     background-repeat: no-repeat;
     font-size: 0;
-    background-size: 35px 20px; /* Resize icon to fit the button */
+    background-size: 42px 20px; /* Resize icon to fit the button */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -2227,15 +2227,22 @@ color: white;
 }
 
 .gallery .picture-wrapper {
+  
   margin: 0 0 10px;
 }
 
-.gallery .picture {
-  position: relative;
-  max-width: 100%;
-  margin: 0 auto 10px;
-  overflow: hidden;
-}
+    .gallery .picture {
+        
+        border-radius: 12px; /* Rounded corners */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/*        background-color: lightblue;*/
+        position: relative;
+        max-width: 100%;
+        margin: 0 auto 10px;
+        overflow: hidden;
+    }
 
 .gallery .picture:before {
   content: "";
@@ -2255,11 +2262,18 @@ color: white;
   max-width: 100%;
   max-height: 100%;
   margin: auto;
+  
 }
 
 .picture-gallery .picture-thumbs {
-  overflow: hidden;
-  font-size: 0;
+    
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+/*    background-color: lightblue;*/
+    overflow: hidden;
+    font-size: 0;
 }
 
 .picture-gallery .picture-thumbs .thumb-item {
@@ -2308,16 +2322,18 @@ color: white;
   font-weight: normal;
 }
 
-.overview .short-description {
-  margin: 0 0 25px;
-  line-height: 22px;
-  color: #666;
-}
+    .overview .short-description {
+        margin: 0 0 25px;
+        line-height: 22px;
+        color: black;
+        font-size: 18px;
+    }
 
 .product-no-reviews,
 .product-reviews-overview {
   margin: 0 0 25px;
   color: #444;
+  font-size: 18px;
 }
 
 .product-no-reviews a {
@@ -2331,7 +2347,7 @@ color: white;
 
 .product-review-box .rating {
   width: 95px;
-  height: 14px;
+  height: 18px;
   background: url('../images/rating1.png') repeat-x;
 }
 
@@ -2421,16 +2437,20 @@ color: white;
 
 .overview .button-2,
 .variant-overview .button-2 {
-  display: block;
-  width: 100%;
-  border: none;
-  background-color: #eaeaea;
-  background-position: left center;
-  background-repeat: no-repeat;
-  padding: 12px 15px 12px 40px;
-  text-align: left;
-  font-size: 14px; /*reset zeroing*/
-  color: #666;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #eaeaea;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 12px 15px 12px 40px;
+    text-align: left;
+    font-size: 18px; /*reset zeroing*/
+    color: black;
+
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .overview .button-2:hover,
@@ -2643,12 +2663,16 @@ color: white;
 
 .overview .qty-input,
 .variant-overview .qty-input {
-  width: 45px;
-  height: 43px;
-  padding: 0 12px;
-  text-align: center;
-  font-size: 15px;
-  color: #444;
+    width: 45px;
+    height: 43px;
+    padding: 0 12px;
+    text-align: center;
+    font-size: 15px;
+    color: #444;
+
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .overview .qty-dropdown,
@@ -2661,20 +2685,24 @@ color: white;
 
 .overview .add-to-cart-button,
 .variant-overview .add-to-cart-button {
-  height: 43px;
-  border: none;
-  background-color: #4ab2f1;
-  padding: 0 24px;
-  font-size: 15px;
-  color: #fff;
-  text-transform: uppercase;
+    height: 43px;
+    border: none;
+    background-color: green;
+    padding: 0 24px;
+    font-size: 15px;
+    color: #fff;
+    text-transform: uppercase;
+
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .overview .add-to-cart-button:hover,
 .overview .add-to-cart-button:focus,
 .variant-overview .add-to-cart-button:hover,
 .variant-overview .add-to-cart-button:focus {
-  background-color: #248ece;
+  background-color: darkgreen;
 }
 
 .product-share-button {
