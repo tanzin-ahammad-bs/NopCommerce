@@ -9158,17 +9158,17 @@ body {
 }
 
     .header-menu a {
-        color: white !important;
+        color: white;
         text-transform: uppercase;
         font-weight: 600;
         padding: 10px 15px;
         display: inline-block;
     }
 
-        .header-menu a:hover {
+/*        .header-menu a:hover {
             background-color: #248ece;
             color: #fff !important;
-        }
+        }*/
 
 
 
