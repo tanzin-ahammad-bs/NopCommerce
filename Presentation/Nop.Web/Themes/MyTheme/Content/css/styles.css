@@ -1030,7 +1030,7 @@ label, label + * {
   line-height: 0; /*firefox line-height bug fix*/
 }
 
-    .header-logo a img {
+.header-logo a img {
         max-width: 180px;
         height: auto;
         display: block;
@@ -1040,13 +1040,13 @@ label, label + * {
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         border-radius: 50px;
-    }
+}
 
-        /* Hover effect */
-        .header-logo a img:hover {
-            transform: scale(1.04);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
-        }
+ /* Hover effect */
+.header-logo a img:hover {
+        transform: scale(1.04);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
 
 
 
@@ -2323,12 +2323,12 @@ color: white;
   font-weight: normal;
 }
 
-    .overview .short-description {
+.overview .short-description {
         margin: 0 0 25px;
         line-height: 22px;
         color: black;
         font-size: 18px;
-    }
+}
 
 .product-no-reviews,
 .product-reviews-overview {
@@ -2391,14 +2391,14 @@ color: white;
   display: inline-block;
 }
 
-  .product-review-links.add-review::before {
+.product-review-links.add-review::before {
     content: "|";
     padding: 0 5px;
-  }
+}
 
-  .add-review.product-no-reviews::before {
+.add-review.product-no-reviews::before {
       display: none;
-  }
+}
 
 .product-review-links a {
   text-decoration: underline;
@@ -8280,7 +8280,7 @@ color: white;
   /*** NAVIGATION ***/
 
 
-    .header-menu {
+  .header-menu {
         /*        background-color: lightskyblue;*/
         /*        background-color: #fff5d7;*/
         background-color: #91A2C2;
@@ -8292,7 +8292,7 @@ color: white;
         border-bottom: 1px solid #ddd;
         padding: 25px 0;
         text-align: center;
-    }
+  }
 
   .menu-toggle,
   .sublist-toggle {
@@ -8333,7 +8333,7 @@ color: white;
     color: white;
   }
 
-    .header-menu .sublist {
+  .header-menu .sublist {
         
         border-radius: 12px; /* Rounded corners */
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Soft shadow */
@@ -8347,7 +8347,7 @@ color: white;
         background-color: #91A2C2;
         padding: 10px 0;
         text-align: left;
-    }
+  }
 
   .header-menu .sublist li {
     position: relative;
@@ -9207,18 +9207,18 @@ body {
     color: white;
 }
 
-    .header-menu a {
-        color: white;
-        text-transform: uppercase;
-        font-weight: 600;
-        padding: 10px 15px;
-        display: inline-block;
-    }
+.header-menu a {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 15px;
+    display: inline-block;
+ }
 
-/*        .header-menu a:hover {
-            background-color: #248ece;
-            color: #fff !important;
-        }*/
+/*  .header-menu a:hover {
+    background-color: #248ece;
+    color: #fff !important;
+}*/
 
 
 
