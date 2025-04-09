@@ -1,0 +1,11 @@
+﻿{
+  "Group": "Widgets",
+  "FriendlyName": "My Plugin",
+  "SystemName": "Widgets.MyPlugin",
+  "Version": "1.0",
+  "SupportedVersions": [ "4.80" ],
+  "Author": "Tanzin Ahammad",
+  "DisplayOrder": 1,
+  "FileName": "Nop.Plugin.Widgets.MyPlugin.dll",
+  "Description": "This is a test plugin"
+}

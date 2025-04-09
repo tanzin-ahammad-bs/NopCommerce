@@ -1,0 +1,11 @@
+﻿{
+    "Group": "Widgets",
+    "FriendlyName": "Hello World",
+    "SystemName": "Widgets.HelloWorld",
+    "Version": "1.0",
+    "SupportedVersions": [ "4.00" ],
+    "Author": "nopCommerce team",
+    "DisplayOrder": 1,
+    "FileName": "Nop.Plugin.Widgets.HelloWorld.dll",
+    "Description": "This plugin shows the Hello World text. It shows the creation of a plugin."
+}
