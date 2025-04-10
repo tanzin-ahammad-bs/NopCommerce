@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Nop.Services.Catalog;
 using Nop.Services.Media;
 using Nop.Web.Framework.Components;
@@ -25,7 +23,7 @@ namespace Nop.Plugin.Widget.Manufacturers.Components
 
             foreach (var manufacturer in manufacturers)
             {
-                var pictureUrl = await _pictureService.GetPictureUrlAsync(manufacturer.PictureId, 200); // Optional: set width
+                var pictureUrl = await _pictureService.GetPictureUrlAsync(manufacturer.PictureId, 200);
                 if (!string.IsNullOrEmpty(pictureUrl))
                     pictureUrls.Add(pictureUrl);
             }
