@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Nop.Plugin.Widget.HelloWorld.Components;
+using Nop.Plugin.Widget.Manufacturers.Components;
 using Nop.Services.Cms;
 using Nop.Services.Plugins;
 
-namespace Nop.Plugin.Widget.HelloWorld;
+namespace Nop.Plugin.Widget.Manufacturers;
 public class ManufacturerPlugin : BasePlugin, IWidgetPlugin
 {
     /// <summary>
@@ -34,7 +34,7 @@ public class ManufacturerPlugin : BasePlugin, IWidgetPlugin
     /// </returns>
     public Task<IList<string>> GetWidgetZonesAsync()
     {
-        return Task.FromResult<IList<string>>(new List<string> { "home_page_before_news" });
+        return Task.FromResult<IList<string>>(new List<string> { "home_page_before_categories" });
     }
 
     public override async Task InstallAsync()

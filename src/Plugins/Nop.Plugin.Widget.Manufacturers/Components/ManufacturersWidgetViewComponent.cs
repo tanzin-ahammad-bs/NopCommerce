@@ -5,7 +5,7 @@ using Nop.Services.Catalog;
 using Nop.Services.Media;
 using Nop.Web.Framework.Components;
 
-namespace Nop.Plugin.Widget.HelloWorld.Components
+namespace Nop.Plugin.Widget.Manufacturers.Components
 {
     public class ManufacturersWidgetViewComponent : NopViewComponent
     {
