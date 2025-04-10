@@ -106,6 +106,10 @@
     {
       "SystemName": "Widgets.MyPlugin",
       "Version": "1.0"
+    },
+    {
+      "SystemName": "Widget.Manufacturers",
+      "Version": "4.80.4"
     }
   ],
   "PluginNamesToUninstall": [],

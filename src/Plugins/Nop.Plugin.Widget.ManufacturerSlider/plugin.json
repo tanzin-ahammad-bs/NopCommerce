@@ -1,0 +1,11 @@
+{
+    "Group": "Widgets",
+    "FriendlyName": "Manufacturer Slider",
+    "SystemName": "Widgets.ManufacturerSlider",
+    "Version": "1.0",
+    "SupportedVersions": [ "4.60" ],
+    "Author": "Your Name",
+    "DisplayOrder": 1,
+    "FileName": "Nop.Plugin.Widget.ManufacturerSlider.dll",
+    "Description": "Displays manufacturers in a modern slider on homepage"
+}

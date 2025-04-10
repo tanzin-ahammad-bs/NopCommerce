@@ -1,0 +1,76 @@
+@model List<string>
+
+<!-- Swiper CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<h2 style="text-align: center; font-size: 30px; color: #333; margin-bottom: 20px;">Our Manufacturers</h2>
+
+<!-- Swiper Container -->
+<div class="swiper manufacturer-swiper">
+    <div class="swiper-wrapper">
+        @foreach (var imageUrl in Model)
+        {
+            <div class="swiper-slide">
+                <div class="manufacturer-card">
+                    <img src="@imageUrl" alt="Manufacturer" />
+                </div>
+            </div>
+        }
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<script>
+    new Swiper('.manufacturer-swiper', {
+        loop: true,
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        }
+    });
+</script>
+
+<!-- Custom Styles -->
+<style>
+    .manufacturer-card {
+        padding: 20px;
+        background: #fff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+
+        .manufacturer-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .manufacturer-card img {
+            max-height: 160px;
+            width: auto;
+            max-width: 100%;
+            object-fit: contain;
+        }
+
+    .swiper {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        color: #4ab2f1;
+    }
+</style>
