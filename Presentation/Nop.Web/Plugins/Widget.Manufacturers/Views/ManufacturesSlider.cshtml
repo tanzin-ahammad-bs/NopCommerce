@@ -29,7 +29,7 @@
 <script>
     new Swiper('.manufacturer-swiper', {
         loop: true,
-        slidesPerView: 1,
+        slidesPerView: 3,  
         spaceBetween: 30,
         autoplay: {
             delay: 2000,
@@ -45,8 +45,8 @@
 <!-- Custom Styles -->
 <style>
     .manufacturer-card {
-        padding: 20px;
-        background: lightgray;
+        padding: 15px; 
+        background: white;
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
         text-align: center;
@@ -58,7 +58,8 @@
         }
 
         .manufacturer-card img {
-            max-height: 160px;
+            max-height: 120px; <!--
+            Decreased max-height of images to make them smaller -->
             width: auto;
             max-width: 100%;
             object-fit: contain;
